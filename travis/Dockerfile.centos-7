@@ -6,12 +6,14 @@ RUN \
   yum install -y  \
     gcc \
     libxml2 \
+    lua-devel \
     luajit \
     luajit-devel \
     luarocks \
     make \
     m4
 RUN \
+  luarocks install luautf8 && \
   luarocks install luaunit
 
 RUN \

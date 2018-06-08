@@ -2,7 +2,7 @@
 
 -- -*- lua -*-
 
-local package_version = "1.0.0"
+local package_version = "1.0.1"
 
 package = "luacs"
 version = package_version .. "-0"
@@ -20,9 +20,12 @@ description = {
   -- Since 3.0
   -- labels = {"css"},
 }
+dependencies = {
+  "luautf8",
+}
 -- LuaDist source
 source = {
-  tag = "1.0.0-0",
+  tag = "1.0.1-0",
   url = "git://github.com/LuaDist-testing/luacs.git"
 }
 -- Original source

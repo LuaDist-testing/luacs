@@ -1,6 +1,6 @@
 -- -*- lua -*-
 
-local package_version = "1.0.0"
+local package_version = "1.0.1"
 
 package = "LuaCS"
 version = package_version .. "-0"
@@ -17,6 +17,9 @@ description = {
   maintainer = "Kouhei Sutou <kou@clear-code.com>",
   -- Since 3.0
   -- labels = {"css"},
+}
+dependencies = {
+  "luautf8",
 }
 source = {
   url = "https://github.com/clear-code/luacs/archive/" .. package_version .. ".zip",
